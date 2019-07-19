@@ -1,4 +1,5 @@
 const config = require('./src/data/config')
+const path = require('path')
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -199,6 +200,18 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-offline',
+	'gatsby-plugin-offline',
+	{
+		resolve: `gatsby-plugin-alias-imports`,
+		options: {
+			alias: {
+				Components: path.resolve(__dirname, 'src/components'),
+				Common: path.resolve(__dirname, 'src/components/common'),
+				Static: path.resolve(__dirname, 'static/'),
+				Theme: path.resolve(__dirname, 'src/components/theme'),
+				Data: path.resolve(__dirname, 'data/config'),
+			},
+		},
+	},
   ],
 }

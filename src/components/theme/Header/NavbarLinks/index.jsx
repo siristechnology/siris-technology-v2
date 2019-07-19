@@ -1,19 +1,17 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 import { ThemeContext } from 'components/common'
-import night from 'assets/icons/night.svg'
-import day from 'assets/icons/day.svg'
-import { Links, StyledButton } from './styles'
+import { Links } from './styles'
 
 export default ({ desktop }) => {
-  const { theme, toggleTheme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext)
 
   return (
     <Links desktop={desktop} theme={theme}>
-      <Link to="/" activeClassName="current">
-        Home
+      <Link to="#projects" activeClassName="current">
+        Projects
       </Link>
-      <Link to="/about" activeClassName="current">
+	  <Link to="/about" activeClassName="current">
         About
       </Link>
       <Link to="/blog" activeClassName="current">
@@ -25,9 +23,6 @@ export default ({ desktop }) => {
       <Link to="/contact" activeClassName="current">
         Contact
       </Link>
-      <StyledButton type="button" onClick={toggleTheme}>
-        <img src={theme === 'dark' ? day : night} alt={theme} />
-      </StyledButton>
     </Links>
   )
 }

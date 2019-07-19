@@ -1,36 +1,29 @@
 module.exports = {
-	defaultTitle: 'Smakosh',
+	defaultTitle: 'Siris Technology',
 	logo: 'https://smakosh.com/favicon/logo-48.png',
-	author: 'Ismail Ghallou (Smakosh)',
-	url: 'https://smakosh.com',
-	legalName: 'Ismail Ghallou',
-	defaultDescription:
-		"I'm Ismail Ghallou aka Smakosh, a self-taught Graphic, UI/UX Designer and full stack developer, interested in the web, neural networks & tech in general.",
+	author: 'Siris Technology',
+	url: 'https://siristechnology.com',
+	legalName: 'Siris Technology LLC',
+	defaultDescription: 'A technology company',
 	socialLinks: {
-		twitter: 'http://www.twitter.com/smakosh',
-		github: 'https://github.com/smakosh',
-		linkedin: 'https://www.linkedin.com/in/ismail-ghallou-630149122',
-		instagram: 'https://instagram.com/smakosh19',
-		youtube: 'https://www.youtube.com/user/smakoshthegamer',
-		google: 'https://plus.google.com/u/0/+IsmailSmakoshGhallou'
+		twitter: 'https://twitter.com/SirisTechnology',
+		github: 'https://github.com/siristechnology'
 	},
 	googleAnalyticsID: 'UA-88875900-1',
-	themeColor: '#00c6ff',
-	backgroundColor: '#00c6ff',
+	themeColor: '#6b63ff',
+	backgroundColor: '#6b63ff',
 	siteRss: '/rss.xml',
 	social: {
-		facebook: '165244147328608',
-		twitter: '@smakosh'
+		twitter: '@siristechnology',
 	},
 	address: {
-		city: 'Errachidia',
-		region: 'Drâa-Tafilalet',
-		country: 'Morocco',
-		zipCode: '52000'
+		city: 'CENTREVILLE',
+		state: 'VA',
+		country: 'USA',
+		zipCode: '20121',
 	},
 	contact: {
-		email: 'ismai23l@hotmail.com',
-		phone: '+212-663-53-27-61'
+		email: 'siristechnologyllc@gmail.com'
 	},
 	foundingDate: '2016'
 }

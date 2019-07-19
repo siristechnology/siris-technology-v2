@@ -1,29 +1,26 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
-import { SmallerContainer, ThemeContext } from 'components/common'
-import { MagicalButton, Wrapper, Flex } from './styles'
+import { Container, SmallerContainer, ThemeContext, Button } from 'components/common'
+import { IntroWrapper, MagicalButton, Wrapper, Flex, Details, Thumbnail } from './styles'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import dev from 'Static/illustrations/dev.svg'
 
 export const Intro = () => {
 	const { theme } = useContext(ThemeContext)
 	return (
 		<Wrapper theme={theme} as={SmallerContainer}>
-			<h1>I'm Ismail Ghallou</h1>
-			<p>
-				Also known as Smakosh, a self-taught Full Stack JavaScript Developer,
-				Graphic and UI/UX Designer.
-			</p>
-			<Flex>
-				<MagicalButton
-					href="https://docs.google.com/document/d/1yxCORtBMNxj_ukgOxoYQfRu3HTUqjtNXwcMajzcftF8"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					View resume
+			<IntroWrapper as={Container}>
+			<Details>
+			<h1>We build world-class software for you!</h1>
+				<h4>We help imagine and create digital products people love to use.</h4>
+				<MagicalButton as={AnchorLink} href="#contact">
+					Get in touch
 				</MagicalButton>
-				<MagicalButton as={Link} to="/contact">
-					Get In Touch
-				</MagicalButton>
-			</Flex>
+			</Details>
+			<Thumbnail>
+				<img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
+			</Thumbnail>
+			</IntroWrapper>
 		</Wrapper>
 	)
 }
