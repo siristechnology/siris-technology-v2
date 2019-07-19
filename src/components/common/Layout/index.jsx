@@ -13,7 +13,6 @@ export const Layout = ({ children }) => (
 					<Header />
 					<LayoutStyled theme={theme}>
 						{children}
-						<Subscribe />
 					</LayoutStyled>
 					<Footer />
 				</>

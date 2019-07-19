@@ -1,8 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Container, Subtitle } from 'components/common'
-import Behance from './Behance'
-import Dribbble from './Dribbble'
 import SideProjects from './SideProjects'
 
 export const imageFields = graphql`
@@ -14,10 +12,8 @@ export const imageFields = graphql`
 `
 
 export const Work = () => (
-	<Container>
-		<Subtitle>Work</Subtitle>
+	<Container id="projects">
+		<Subtitle>Projects</Subtitle>
 		<SideProjects />
-		<Behance />
-		<Dribbble />
 	</Container>
 )

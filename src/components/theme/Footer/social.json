@@ -1,0 +1,14 @@
+[
+	{
+		"id": 0,
+		"name": "Github",
+		"link": "https://github.com/siristechnology",
+		"icon": "/icons/github.svg"
+	},
+	{
+		"id": 1,
+		"name": "Twitter",
+		"link": "https://twitter.com/siristechnology",
+		"icon": "/icons/twitter.svg"
+	}
+]

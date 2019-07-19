@@ -9,12 +9,12 @@ export default () => {
 	return (
 		<Wrapper as={Container}>
 			<Brand as={Link} theme={theme} to="/">
-				<BrandLogo
+				{/* <BrandLogo
 					as={Logo}
 					color={theme === 'dark' ? '#fff' : '#212121'}
-					strokeWidth="2"
-				/>
-				Smakosh
+					strokeWidth='1'
+				/> */}
+				Siris Technology
 			</Brand>
 			<NavbarLinks desktop />
 		</Wrapper>

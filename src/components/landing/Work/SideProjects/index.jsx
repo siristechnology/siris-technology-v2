@@ -24,5 +24,5 @@ export default () => {
       }
     }
   `)
-  return <Project title="Side Projects" projects={sideProjects} side />
+  return <Project projects={sideProjects} side />
 }

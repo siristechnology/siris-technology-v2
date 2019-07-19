@@ -1,59 +1,49 @@
 import styled from 'styled-components'
 
-export const FooterContainer = styled.footer`
-  margin-top: 6rem;
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-			background: #212121;
-	`};
-`
-
-export const FullContainer = styled.div`
-  width: 100%;
-  padding: 8rem 0 2rem 0;
-  color: #fff;
-  background-image: linear-gradient(10deg, #0072ff 0%, #00c6ff 100%);
-`
-
-export const List = styled.ul`
-  list-style: none;
-  align-self: center;
-
-  a {
-    color: #fff;
-  }
-`
-
 export const Wrapper = styled.div`
-  padding: 2rem 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+	padding: 28rem 0 4rem 0;
+	background-image: url('../illustrations/footer.svg');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
 
-  @media (max-width: 680px) {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
+	@media (max-width: 1960px) {
+		padding: 14rem 0 4rem;
+	}
 `
 
-export const Brand = styled.div`
-  display: flex;
-  align-items: center;
+export const Flex = styled.div`
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+
+	@media (max-width: 680px) {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
 `
 
-export const StyledLogo = styled.div`
-  transition: 0.5s;
-  height: 4rem;
-  width: 4rem;
-  margin-right: 1rem;
-  margin-bottom: 0;
+export const Links = styled.div`
+	display: flex;
+	align-items: center;
 
-  &:hover {
-    opacity: 0.7;
-    transition: 0.5s;
-    transform: rotate(360deg);
-  }
+	a {
+		margin: 0 0.5rem;
+
+		img {
+			margin: 0;
+		}
+
+		&:first-child,
+		&:last-child {
+			margin: 0;
+		}
+	}
+`
+
+export const Details = styled.div`
+	@media (max-width: 680px) {
+		margin-bottom: 2rem;
+	}
 `
