@@ -37,12 +37,12 @@ module.exports = {
         fetchOptions: {},
       },
     },
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint: process.env.MC_ENDPOINT,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-mailchimp',
+    //   options: {
+    //     endpoint: process.env.MC_ENDPOINT,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
